@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGenerator</title>
+    <link rel="stylesheet" href="ind.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="main">
+        <h1>Password Generator</h1>
+        <div id="left">
+            <h2>Purpose</h2>
+            <h4>The Password Generator Website is a simple tool designed to help users create strong and secure passwords easily. It allows users to customize the password length and choose whether to include uppercase letters, lowercase letters, numbers, and special characters.</h4>
+            <h2 id="use">How To Use</h2>
+            <div id="b1"><i class="ri-star-smile-fill"></i></div>
+            <div id="b2"><i class="ri-star-smile-fill"></i></div>
+            <div id="b3"><i class="ri-star-smile-fill"></i></div>
+            <div id="b11"><h5>Decide the password length.</h5></div>
+            <div id="b12"><h5>Use checkboxes to indicate whether to include Uppercase Letters Lowercase Letters Numbers Special Characters.</h5></div>
+            <div id="b13"><h5>Click the "Generate Password" button to create a random password based on your configuration</h5></div>
+        </div>
+        <div id="right">
+            <div id="box">
+                <div id="1st">
+                    <input type="text" id="password" placeholder="Generated Password" readonly>
+                    <button onclick="copy()"><i class="ri-file-copy-2-line"></i></button>
+                </div>
+                <div id="2nd">
+                    <h5>Enter The Length</h5>
+                    <input type="text" id="passlen">
+                </div>
+                <div id="3rd">
+                    <h5> Include Uppercase Letters</h5>
+                    <input type="checkbox" id="Uppercase">
+                </div>
+                <div id="4th">
+                    <h5>Include Lowercase Letters</h5>
+                    <input type="checkbox" id="Lowercase">
+                </div>
+                <div id="5th">
+                    <h5>Include Numbers</h5>
+                    <input type="checkbox" id="Numbers">
+                </div>
+                <div id="6th">
+                    <h5>Include Symbols</h5>
+                    <input type="checkbox" id="Symbols">
+                </div>
+                <button id="gnrt" onclick="passgen()">Generate Password</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script defer src="password.js">
+
+    </script>
+</body>
+</html>
